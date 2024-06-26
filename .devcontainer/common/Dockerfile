@@ -95,4 +95,4 @@ RUN apt install -y ros-$ROS_DISTRO-turtlebot3-gazebo
 
 ## adding source to bashrc
 RUN echo 'export TURTLEBOT3_MODEL=waffle' && \
-    echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/$ROS_DISTRO/share/turtlebot3_gazebo/models' >> /root/.bashrc
+    echo 'export GAZEBO_MODEL_PATH=GAZEBO_MODEL_PATH:/opt/ros/$ROS_DISTRO/share/turtlebot3_gazebo/models' >> /root/.bashrc

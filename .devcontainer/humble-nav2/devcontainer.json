@@ -1,8 +1,8 @@
 {
-	"name": "Humble - ROS2 Workspace",
+	"name": "Humble - NAV2 Workspace",
     "build": {
         "dockerfile": "../common/Dockerfile",
-		"target": "ros2",
+		"target": "nav2",
         "args": {
             "BASE_IMAGE": "osrf/ros:humble-desktop-full",
         }
