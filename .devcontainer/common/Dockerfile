@@ -86,13 +86,3 @@ RUN apt update && apt upgrade -y
 RUN apt install -y \
     ros-$ROS_DISTRO-navigation2 \
     ros-$ROS_DISTRO-nav2-bringup
-
-## Installing turtlebot
-RUN apt install -y ros-$ROS_DISTRO-turtlebot3-gazebo
-
-
-# SOURCING PKGS
-
-## adding source to bashrc
-RUN echo 'export TURTLEBOT3_MODEL=waffle' && \
-    echo 'export GAZEBO_MODEL_PATH=GAZEBO_MODEL_PATH:/opt/ros/$ROS_DISTRO/share/turtlebot3_gazebo/models' >> /root/.bashrc
